@@ -1,0 +1,72 @@
+html {
+    background-image: radial-gradient(circle at 50% -20.71%, #ffffe0 0, #feffdc 8.33%, #f3ffd7 16.67%, #e6ffd3 25%, #d8fbcf 33.33%, #c7f7cc 41.67%, #b5f2c9 50%, #a1edc8 58.33%, #8de9c9 66.67%, #79e4cc 75%, #63e0d0 83.33%, #4bddd6 91.67%, #2fd9dd 100%);
+
+}
+body {
+    margin: 0 auto;
+    width: 600px;
+}
+
+
+h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+section {
+    display: wrap;
+}
+
+#contenedor {
+    display: inline-flex;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: black;
+
+}
+
+#imagen{
+    display: inline-flex;
+    width: 40%;
+    border-radius: 2px;
+}
+
+#datos {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding-left: 20px;
+    margin-top: -20px;
+}
+
+#datos p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.titulosCine {
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 22px;
+}
+
+.titulosCine .cine {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: justify;
+    font-size: 20px;
+    width: 100%;
+    margin-top: -20px;
+}
+
+article h3 {
+    font-size: 22px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+article p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: justify;
+}
+
+footer {
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
