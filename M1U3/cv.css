@@ -8,26 +8,42 @@ body {
 }
 
 .header {
-    position: relative;
+    position: sticky;
     top: 0;
     border-radius: 20px;
     padding: .25rem;
     text-align: center;
     width: 100%;
     justify-content: space-between;
+    background-color: rgba(131, 131, 131, 0.884);
 }
 
 h1 {
+    display: flex;
+    margin-top: 0px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     display: flex;
     justify-content: center;
 }
 
 #navegador{
+    position: sticky;
     display: flex;
     margin-top: -20px;
     justify-content: space-around;
     font-size: 20px;
+    text-decoration: none;
+}
+
+#navegador a{
+    color:black;
+    text-shadow: 0rem 0rem 0.5rem white;
+    text-decoration: none;
+}
+
+#navegador a:hover{
+    color:white;
+    text-shadow: 0rem 0rem 0.5rem black;
     text-decoration: none;
 }
 
@@ -56,8 +72,8 @@ section {
     font-family:Arial, Helvetica, sans-serif;
     font-size: 20px;
     padding-left: 20px;
-    margin-top: -20px;
-    margin-bottom: 100px;
+    margin-top: 0px;
+    margin-bottom: 50px;
 }
 
 #datos p {
@@ -75,7 +91,6 @@ section {
     text-align: justify;
     font-size: 20px;
     width: 100%;
-    margin-top: -20px;
 }
 
 article h3 {
