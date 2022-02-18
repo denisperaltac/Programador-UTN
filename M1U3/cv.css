@@ -7,11 +7,28 @@ body {
     width: 600px;
 }
 
+.header {
+    position: relative;
+    top: 0;
+    border-radius: 20px;
+    padding: .25rem;
+    text-align: center;
+    width: 100%;
+    justify-content: space-between;
+}
 
 h1 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     display: flex;
     justify-content: center;
+}
+
+#navegador{
+    display: flex;
+    margin-top: -20px;
+    justify-content: space-around;
+    font-size: 20px;
+    text-decoration: none;
 }
 
 section {
@@ -40,6 +57,7 @@ section {
     font-size: 20px;
     padding-left: 20px;
     margin-top: -20px;
+    margin-bottom: 100px;
 }
 
 #datos p {
