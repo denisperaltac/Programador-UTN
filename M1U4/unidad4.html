@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // Ejercicio 1
+        
+        // Utilizando lo aprendido escribir el código necesario para que dada una distancia determine el medio de transporte apropiado de acuerdo a las siguientes reglas:
+        
+        // 0 a 1000 metros = pie
+        // 1000 a 10000 metros = bicicleta
+        // 10000 a 30000 metros = colectivo
+        // 30000 a 100000 metros = auto
+        // +100000 = avión
+        
+        function medioDeTransporte (numero) {
+        
+        if (typeof numero !== "number") {return console.warn(`El valor ingresado "${numero}" no es un número`)}
+        if (numero < 1000) {console.info(`Al ser la distancia de ${numero} metros, el medio de transporte más apropiado es ir a pie`)}
+        if (numero > 1000 && numero < 10000) {console.info(`Al ser la distancia de ${numero} metros, el medio de transporte más apropiado es ir en bicicleta`)}
+        if (numero > 10000 && numero < 30000) {console.info(`Al ser la distancia de ${numero} metros, el medio de transporte más apropiado es ir en colectivo`)}
+        if (numero > 30000 && numero < 100000) {console.info(`Al ser la distancia de ${numero} metros, el medio de transporte más apropiado es ir en auto`)}
+        if (numero > 100000) {console.info(`Al ser la distancia de ${numero} metros, el medio de transporte más apropiado es ir en avión`)}
+        }
+
+        // medioDeTransporte(true)
+        // medioDeTransporte(undefined)
+        // medioDeTransporte(200)
+        // medioDeTransporte(2000)
+        // medioDeTransporte(20100)
+        // medioDeTransporte(50000)
+        // medioDeTransporte(1500000)
+
+        
+        // Ejercicio 2
+        
+        // Haciendo uso de los bucles, recorrer un array de números y determinar cual es el mayor
+
+        function mayorNumero (arr) {
+            var arr2 = [];
+            arr2.push(arr[0]);
+            if (!(arr instanceof Array)) {return console.warn("El valor que ingresaste no es un array.")};
+            for (let num of arr) {
+                if (typeof num !== "number") {return console.warn("Unicamente se aceptan números como valor en el array.")}
+            }
+            for (var i = 0; i < arr.length; i++) {
+                 if (arr[i] > arr2[0]) {arr2.unshift(arr[i]) }
+            }
+            console.info(`El mayor número del array es ${arr2[0]}`)
+        }
+
+        // mayorNumero("str")
+        // mayorNumero([2,55,10,-500,true])
+        // mayorNumero([2,55,10,250,-1155])
+
+        </script>
+</body>
+</html>
