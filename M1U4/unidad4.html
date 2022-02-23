@@ -19,45 +19,57 @@
         // 30000 a 100000 metros = auto
         // +100000 = avión
         
-        function medioDeTransporte (numero) {
-        
-        if (typeof numero !== "number") {return console.warn(`El valor ingresado "${numero}" no es un número`)}
-        if (numero < 1000) {console.info(`Al ser la distancia de ${numero} metros, el medio de transporte más apropiado es ir a pie`)}
-        if (numero > 1000 && numero < 10000) {console.info(`Al ser la distancia de ${numero} metros, el medio de transporte más apropiado es ir en bicicleta`)}
-        if (numero > 10000 && numero < 30000) {console.info(`Al ser la distancia de ${numero} metros, el medio de transporte más apropiado es ir en colectivo`)}
-        if (numero > 30000 && numero < 100000) {console.info(`Al ser la distancia de ${numero} metros, el medio de transporte más apropiado es ir en auto`)}
-        if (numero > 100000) {console.info(`Al ser la distancia de ${numero} metros, el medio de transporte más apropiado es ir en avión`)}
+        function medioDeTransporte () {
+            //  Ingresamos los datos
+            metros = prompt("ingrese la cantidad de metros a recorrer","");
+            numero = parseInt(metros);
+            
+            // Comprobamos los datos
+        if (isNaN(numero)) {return document.write(`El valor ingresado NO es un número`)}
+
+            // Resolvemos el ejercicio
+        if (numero < 1000) {document.write(`Al ser la distancia de ${numero} metros, el medio de transporte más apropiado es ir a pie`)}
+        if (numero > 1000 && numero < 10000) {document.write(`Al ser la distancia de ${numero} metros, el medio de transporte más apropiado es ir en bicicleta`)}
+        if (numero > 10000 && numero < 30000) {document.write(`Al ser la distancia de ${numero} metros, el medio de transporte más apropiado es ir en colectivo`)}
+        if (numero > 30000 && numero < 100000) {document.write(`Al ser la distancia de ${numero} metros, el medio de transporte más apropiado es ir en auto`)}
+        if (numero > 100000) {document.write(`Al ser la distancia de ${numero} metros, el medio de transporte más apropiado es ir en avión`)}
         }
 
-        // medioDeTransporte(true)
-        // medioDeTransporte(undefined)
-        // medioDeTransporte(200)
-        // medioDeTransporte(2000)
-        // medioDeTransporte(20100)
-        // medioDeTransporte(50000)
-        // medioDeTransporte(1500000)
-
+        // medioDeTransporte()
         
         // Ejercicio 2
         
         // Haciendo uso de los bucles, recorrer un array de números y determinar cual es el mayor
 
-        function mayorNumero (arr) {
+        function mayorNumero () {
+            // Definimos las variables
             var arr2 = [];
-            arr2.push(arr[0]);
-            if (!(arr instanceof Array)) {return console.warn("El valor que ingresaste no es un array.")};
-            for (let num of arr) {
-                if (typeof num !== "number") {return console.warn("Unicamente se aceptan números como valor en el array.")}
+            x = 1;
+
+            // Ingresamos los datos
+            tamañoArr = prompt("Cuántos números desea ingresar?","");
+            tamaño = parseInt(tamañoArr);
+
+            for (let i = 0; i < tamaño; i++) {
+                elem = prompt(`ingrese un valor ${x} de ${tamaño}`,"")
+                numero = parseInt(elem)
+                arr2.push(numero);
+                x++;
             }
-            for (var i = 0; i < arr.length; i++) {
-                 if (arr[i] > arr2[0]) {arr2.unshift(arr[i]) }
+            // Comprobamos los datos
+
+            for (let num of arr2) {
+                if (isNaN(num)) {return console.warn("Unicamente se aceptan números como valor en el array.")}
             }
-            console.info(`El mayor número del array es ${arr2[0]}`)
+            // Resolución
+
+            for (var i = 0; i < arr2.length; i++) {
+                 if (arr2[i] > arr2[0]) {arr2.unshift(arr2[i]) }
+            }
+            document.write(`El mayor número ingresado es ${arr2[0]}`)
         }
 
-        // mayorNumero("str")
-        // mayorNumero([2,55,10,-500,true])
-        // mayorNumero([2,55,10,250,-1155])
+        // mayorNumero()
 
         </script>
 </body>
