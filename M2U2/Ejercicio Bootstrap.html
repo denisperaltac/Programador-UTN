@@ -18,116 +18,147 @@
   <!-- Encabezado -->
 
   <div class="container-fluid bg-warning fs-4 text-center">Ejercicio Bootstrap UTN</div>
-
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+<main id="navegador">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navegador">
     <div class="container-fluid">
       <a class="navbar-brand fw-bold" href="#">Pulp Fiction</a>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
 
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="#">Actores</a>
+            <a class="nav-link" href="#actores">Protagonistas</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="#">Reseñas</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link">Reseñas</a>
+            <a class="nav-link" href="#reseñas">Reseñas</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
+</main>
 
   <!-- Inicio -->
-<div class="contenedor">
-  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-          
-    <div class="carousel-inner">
+  <div class="contenedor mt-5 pt-5" id="inicio">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
 
-      <div class="carousel-item active" data-bs-interval="3000">
-        <img src="./img/Baile.png" class="d-block w-100" alt="...">
+      <div class="carousel-inner">
+
+        <div class="carousel-item active" data-bs-interval="3000">
+          <img src="./img/Baile.png" class="d-block w-100" alt="...">
+        </div>
+
+        <div class="carousel-item" data-bs-interval="3000">
+          <img src="./img/Samuel y Jhon.jpg" class="d-block w-100" alt="...">
+        </div>
+
+        <div class="carousel-item" data-bs-interval="3000">
+          <img src="./img/The Wolf.jpg" class="d-block w-100" alt="...">
+        </div>
+
       </div>
-
-      <div class="carousel-item" data-bs-interval="3000">
-        <img src="./img/Samuel y Jhon.jpg" class="d-block w-100" alt="...">
-      </div>
-
-      <div class="carousel-item" data-bs-interval="3000">
-        <img src="./img/The Wolf.jpg" class="d-block w-100" alt="...">
-      </div>
-
+      <button class="carousel-control-prev btn-warning boton" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next btn-warning boton" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-    <button class="carousel-control-prev btn-warning boton" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next btn-warning boton" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
   </div>
-</div>
 
 
   <!-- Actores -->
-
-  <div class="actores container-fluid">
+  <main class="actores" id="actores">
+    <div class="container-fluid bg-warning fs-4 text-center">Protagonistas</div>
+    <table class="table mt-5">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Nombre</th>
+          <th scope="col">Apellido</th>
+          <th scope="col">Personaje</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="table-primary">
+          <th scope="row">1</th>
+          <td>Jhon</td>
+          <td>Travolta</td>
+          <td>Vincent Vega</td>
+        </tr>
+        <tr class="table-primary">
+          <th scope="row">2</th>
+          <td>Samuel L.</Label></td>
+          <td>Jackson</td>
+          <td>Jules Winnfield</td>
+        </tr>
+        <tr class="table-secondary">
+          <th scope="row">3</th>
+          <td>Bruce</td>
+          <td>Willis</td>
+          <td>Butch Coolidge</td>
+        </tr>
+        <tr class="table-secondary">
+          <th scope="row">4</th>
+          <td>Maria de</td>
+          <td>Medeiros</td>
+          <td>Fabienne</td>
+        </tr>
+        <tr class="table-dark">
+          <th scope="row">Director</th>
+          <td>Quentin</td>
+          <td>Tarantino</td>
+          <td>Jimmie Dimmick</td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+  <!-- Reseñas -->
+  <div class="container-fluid bg-warning fs-4 text-center mb-5" id="reseñas">Reseñas</div>
+  <main class="d-flex justify-content-between cartas">
+    
     <div class="card" style="width: 18rem;">
-      <img src="./img/Quentin_Tarantino.jpg" class="card-img-top" alt="...">
+      <img src="./img/imdb_logo.png" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-          content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <h5 class="card-title">IMDB</h5>
+        <p class="card-text">Puntaje: 8.9 / 10</p>
+        <a href="https://www.imdb.com/title/tt0110912/" class="btn btn-warning">Go IMDB</a>
       </div>
     </div>
-  </div>
 
-  <div class="actores container-fluid">
+
+
     <div class="card" style="width: 18rem;">
-      <img src="./img/Quentin_Tarantino.jpg" class="card-img-top" alt="...">
+      <img src="./img/rotten-tomatoes-logo.jpg" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-          content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <h5 class="card-title">ROTTEN TOMATOES</h5>
+        <p class="card-text">Puntaje: 92%</p>
+        <a href="https://www.rottentomatoes.com/m/pulp_fiction" class="btn btn-danger">Go Rotten Tomatoes</a>
       </div>
     </div>
-  </div>
 
-  <div class="actores">
+
     <div class="card" style="width: 18rem;">
-      <img src="./img/Quentin_Tarantino.jpg" class="card-img-top" alt="...">
+      <img src="./img/filmaffinity.png" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-          content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <h5 class="card-title">filmaffinity</h5>
+        <p class="card-text">8.6 / 10</p>
+        <a href="https://www.sensacine.com/peliculas/pelicula-10126/" class="btn btn-info">Go filmaffinity</a>
       </div>
     </div>
-  </div>
-
-  <div class="actores">
-    <div class="card" style="width: 18rem;">
-      <img src="./img/Quentin_Tarantino.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-          content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
-  </div>
 
 
 
+
+  </main>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
@@ -135,5 +166,3 @@
 </body>
 
 </html>
-
-
