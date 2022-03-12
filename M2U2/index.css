@@ -4,14 +4,19 @@ body {
 }
 
 .carousel {
-    max-width: 100%;
+    max-width: 80%;
     min-height: 100vh;
-    display: flex;
+    display: block;
     justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .carousel-inner {
     max-width: 40rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
 }
 
 #carouselExampleControls .boton {
@@ -23,4 +28,20 @@ body {
         max-width: 100%;
         min-height: 100vh;
         justify-content: center;
+}
+
+.acordeon {
+    margin-top: 6rem;
+}
+
+.carruselBoton {
+    height: 25rem;
+}
+
+.btnCollapse {
+    max-width: 50%;
+}
+.botones {
+    display: flex;
+    justify-content:space-around;
 }

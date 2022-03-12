@@ -18,36 +18,36 @@
   <!-- Encabezado -->
 
   <div class="container-fluid bg-warning fs-4 text-center">Ejercicio Bootstrap UTN</div>
-<main id="navegador">
-  <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navegador">
-    <div class="container-fluid">
-      <a class="navbar-brand fw-bold" href="#">Pulp Fiction</a>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
+  <main id="navegador">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navegador">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="#">Pulp Fiction</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
 
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
-          </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
+            </li>
 
-          <li class="nav-item">
-            <a class="nav-link" href="#actores">Protagonistas</a>
-          </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#actores">Protagonistas</a>
+            </li>
 
-          <li class="nav-item">
-            <a class="nav-link" href="#reseñas">Reseñas</a>
-          </li>
-        </ul>
+            <li class="nav-item">
+              <a class="nav-link" href="#reseñas">Reseñas</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
-</main>
+    </nav>
+  </main>
 
   <!-- Inicio -->
+
   <div class="contenedor mt-5 pt-5" id="inicio">
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-
+      <div class="carruselBoton">
       <div class="carousel-inner">
-
         <div class="carousel-item active" data-bs-interval="3000">
           <img src="./img/Baile.png" class="d-block w-100" alt="...">
         </div>
@@ -71,6 +71,46 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
+    </div>
+
+      <div class="accordion accordion-flush acordeon" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed bg-black text-warning fs-5" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              Estructura narrativa
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+            data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body bg-light">Pulp Fiction está narrada en un orden no cronológico y cuenta tres historias entrelazadas. La primera de ellas sigue al asesino a sueldo Vincent Vega mientras se ocupa de cuidar de Mia Wallace. El boxeador Butch Coolidge es el protagonista de la segunda y, finalmente, la tercera concierne al compañero de Vincent, Jules Winnfield. Las tres historias están relacionadas entre ellas para formar una intriga que ha sido descrita como "una trama por episodios, con acontecimientos circulares que tienen un principio y un final y en cuyos desarrollos se incluyen elementos y referencias a los otros episodios".</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button class="accordion-button collapsed bg-black text-warning fs-5" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              Prólogo
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+            data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body bg-light">La película comienza por la mañana, en una cafetería de Los Ángeles donde se encuentra una pareja de jóvenes criminales, Pumpkin (a quien Jules llama Ringo) y Yolanda (llamada también Honey Bunny) (Tim Roth y Amanda Plummer). Ambos discuten acerca de los riesgos que comporta su actividad y, finalmente, se deciden a atracar la misma cafetería en la que están. Se produce entonces el primer corte en la película y comienzan los créditos iniciales al ritmo de Misirlou.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button class="accordion-button collapsed bg-black text-warning fs-5" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              Epílogo
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+            data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body bg-light">Mientras, en la cafetería, Vincent se retira un momento al baño, los dos jóvenes atracadores comienzan el asalto. Jules, como los otros clientes, le entrega su cartera a Pumpkin, pero este le ordena que abra el maletín. Cuando Jules lo abre, Pumpkin queda fascinado por lo que ve y Jules aprovecha el momento para agarrar su pistola y tomar el control de la situación. Yolanda apunta entonces a Jules, pero Vincent sale del baño a tiempo para apuntar a Yolanda, en una especie de duelo a la mexicana. Como primer acto de redención de su nueva vida, Jules pronuncia la célebre frase de Ezequiel y permite que Pumpkin y Yolanda se vayan con el dinero, simbólicamente comprando el perdón y la vida de los asaltantes, pero no les deja el maletín. Para finalizar, se ve a Vincent y Jules saliendo de la cafetería dispuestos a entregarle el maletín a Marsellus.</div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -120,11 +160,40 @@
         </tr>
       </tbody>
     </table>
+
+    <div class="curiosidades mt-5 fs-4">
+    <p class="botones">
+      <a class="btn btn-warning btnCollapse fs-4" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Fue la primera película independiente en recaudar más de 200 millones de dólares</a>
+      <button class="btn btn-warning btnCollapse fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">La mayor parte de 'Ezequiel 25:17' no está en la Biblia</button>
+      
+    </p>
+    <div class="row">
+      <div class="col">
+        <div class="collapse multi-collapse" id="multiCollapseExample1">
+          <div class="card card-body bg-light">
+            Hecha con un presupuesto de tan solo ocho millones, la película multiplicaría por 25 esa cifra con su taquilla en todo el mundo, siendo la primera película indie en recibir ese honor. Durante los años siguientes, éxitos como El indomable Will Hunting, Juno, Mi gran boda griega, Shakespeare in Love o Slumdog Millonaire entrarían en el mismo club.
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="collapse multi-collapse" id="multiCollapseExample2">
+          <div class="card card-body bg-light">
+            Indiscutiblemente uno de los mejores monólogos de la historia de cine, el trascendente discurso que suelta el personaje de Samuel L. Jackson cada vez que va a matar a alguien no está presente en ningún Evangelio.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   </main>
+
+
+
+  
+
   <!-- Reseñas -->
   <div class="container-fluid bg-warning fs-4 text-center mb-5" id="reseñas">Reseñas</div>
   <main class="d-flex justify-content-between cartas">
-    
+
     <div class="card" style="width: 18rem;">
       <img src="./img/imdb_logo.png" class="card-img-top" alt="...">
       <div class="card-body">
@@ -133,8 +202,6 @@
         <a href="https://www.imdb.com/title/tt0110912/" class="btn btn-warning">Go IMDB</a>
       </div>
     </div>
-
-
 
     <div class="card" style="width: 18rem;">
       <img src="./img/rotten-tomatoes-logo.jpg" class="card-img-top" alt="...">
@@ -145,7 +212,6 @@
       </div>
     </div>
 
-
     <div class="card" style="width: 18rem;">
       <img src="./img/filmaffinity.png" class="card-img-top" alt="...">
       <div class="card-body">
@@ -154,9 +220,6 @@
         <a href="https://www.sensacine.com/peliculas/pelicula-10126/" class="btn btn-info">Go filmaffinity</a>
       </div>
     </div>
-
-
-
 
   </main>
 
