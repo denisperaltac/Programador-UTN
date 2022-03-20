@@ -7,12 +7,34 @@ h1, h2 {
 }
 
 .hero {
-    background: url(../img/natura.jpg).0 no-repeat;
+    background: url(../img/Fondo-cava.jpeg).0 no-repeat;
     background-size: cover;
-    height: 50vh;
+    height: 100vh;
     min-height: 600px;
     color: white;
 }
+
+#logoCaffalac {
+    display: inline-flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#textoPrincipal {
+    width: 100%;
+    margin-top: 30rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#textoPrincipal h1{
+    text-shadow: 5px 5px #565758;
+}
+
+#lugar {
+    text-align: end;
+    margin-top: 2rem;
+}
+
 
 .lista-novedades {
     margin: 0;
@@ -42,14 +64,13 @@ h1, h2 {
 .lista-novedades li a img {
     width: 120px;
     height: 50px;
-    filter: grayscale();
     transition: all .2s ease-in-out;
     margin-right: 1rem;
-    opacity: 0.7;
+    opacity: 0.8;
 }
 
 .lista-novedades li a:hover img {
-    filter: none;
+    filter: grayscale();
     margin-right: 2rem;
     opacity: 1;
 }
@@ -71,14 +92,6 @@ h1, h2 {
     font-family: "FontAwesome";
     font-size: 30px;
     color: #000;
-}
-
-.carousel-control-prev-icon:after {
-    content: "\f137";
-}
-
-.carousel-control-next-icon:after {
-    content: "\f138";
 }
 
 .carousel-indicators li {
