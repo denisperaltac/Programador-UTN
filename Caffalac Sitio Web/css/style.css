@@ -97,3 +97,12 @@ h1, h2 {
 .carousel-indicators li {
     background-color: #000;
 }
+
+.staff {
+    background: #efefef;
+}
+
+#parteDos {
+    height: 100vh;
+}
+
