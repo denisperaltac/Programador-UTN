@@ -36,6 +36,9 @@ h1, h2 {
     margin-top: 2rem;
 }
 
+#nosotros {
+    margin-top: 120px;
+}
 
 .lista-novedades {
     margin: 0;
@@ -111,3 +114,16 @@ h1, h2 {
     min-height: 80vh;
     margin-top: 8rem;
 }
+
+.nav-item {
+    min-width: 150px;
+    min-height: 80px;
+}
+
+.nav-link:hover {
+    color: red !important;
+    background-color: #a2a2a342;
+    font-size: 25px;
+    border-radius: 5%;
+}
+
