@@ -7,8 +7,9 @@ h1, h2 {
 }
 
 .hero {
-    background: url(../img/Fondo-cava.jpeg).0 no-repeat;
-    background-size: cover;
+    display: flex;
+    background: url(../images/Fondo-cava.jpeg) no-repeat;
+    background-size:cover;
     height: 100vh;
     min-height: 600px;
     color: white;
@@ -107,7 +108,6 @@ h1, h2 {
 }
 
 #visitanos {
-    height: 80vh;
+    min-height: 80vh;
     margin-top: 8rem;
 }
-
