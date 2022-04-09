@@ -2,8 +2,20 @@ footer {
     background-color: #aaa;
 }
 
-h1, h2 {
-    font-family: "Alfa Slab One", cursive;
+h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 2px rgb(255, 255, 255);
+
+}
+
+.fondo {
+    background: url(../images/crema.jpg) no-repeat;
+    background-size:cover;
+}
+
+.vista {
+    min-height: 87vh;
 }
 
 .hero {
@@ -24,11 +36,11 @@ h1, h2 {
 #textoPrincipal {
     width: 70%;
     margin-top: 30rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #textoPrincipal h1{
-    text-shadow: 5px 5px #565758;
+    text-shadow: 2px 2px #565758;
+    color: white;
 }
 
 #lugar {
@@ -48,21 +60,22 @@ h1, h2 {
 
 .lista-novedades li {
     margin: 4px 0;
+
 }
 
 .lista-novedades li a {
-    background-color: #fff;
+    background-color: transparent;
     font-family: "Alfa Slab One", cursive;
     text-decoration: none;
     font-size: 1.2rem;
-    color: #a0a0a0;
+    color: #000;
     transition: all .2s ease-in-out;
     display: block;
 }
 
 .lista-novedades li a:hover {
     color: #212529;
-    background-color: #cfcfcf;
+    background-color: transparent;
 }
 
 .lista-novedades li a img {
@@ -107,23 +120,32 @@ h1, h2 {
 }
 
 #historia {
-    height: 100vh;
+    height: 94vh;
+
 }
 
 #visitanos {
-    min-height: 80vh;
+    min-height: 65vh;
     margin-top: 8rem;
 }
 
+.map {
+    margin-bottom: 50px;
+}
+
 .nav-item {
-    min-width: 150px;
+    min-width: 10px;
     min-height: 80px;
 }
 
 .nav-link:hover {
     color: red !important;
     background-color: #a2a2a342;
-    font-size: 25px;
+    
     border-radius: 5%;
 }
 
+.card {
+    background-color: transparent !important;
+    border: transparent !important;
+}
