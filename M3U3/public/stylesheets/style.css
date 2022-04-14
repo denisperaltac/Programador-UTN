@@ -1,0 +1,154 @@
+footer {
+    background-color: #aaa;
+}
+
+h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 2px rgb(255, 255, 255);
+
+}
+
+.fondo {
+    background: url(../images/crema.jpg) no-repeat;
+    background-size:cover;
+}
+
+.vista {
+    min-height: 87vh;
+}
+
+.hero {
+    display: flex;
+    background: url(../images/Fondo-cava.jpeg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+    min-height: 600px;
+    color: white;
+}
+
+#logoCaffalac {
+    display: inline-flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#textoPrincipal {
+    width: 70%;
+    margin-top: 30rem;
+}
+
+#textoPrincipal h1{
+    text-shadow: 2px 2px #565758;
+    color: white;
+}
+
+#lugar {
+    text-align: end;
+    margin-top: 2rem;
+}
+
+#nosotros {
+    margin-top: 120px;
+}
+
+.lista-novedades {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.lista-novedades li {
+    margin: 4px 0;
+
+}
+
+.lista-novedades li a {
+    background-color: transparent;
+    font-family: "Alfa Slab One", cursive;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #000;
+    transition: all .2s ease-in-out;
+    display: block;
+}
+
+.lista-novedades li a:hover {
+    color: #212529;
+    background-color: transparent;
+}
+
+.lista-novedades li a img {
+    width: 120px;
+    height: 55px;
+    transition: all .2s ease-in-out;
+    margin-right: 1rem;
+    opacity: 0.8;
+}
+
+.lista-novedades li a:hover img {
+    filter: grayscale();
+    margin-right: 2rem;
+    opacity: 1;
+}
+
+.testimonios {
+    background-color: #dadada;
+    padding-bottom: 4rem !important;
+}
+
+.testimonio {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-image: none;
+}
+.carousel-control-prev-icon::after, .carousel-control-next-icon:after {
+    font-family: "FontAwesome";
+    font-size: 30px;
+    color: #000;
+}
+
+.carousel-indicators li {
+    background-color: #000;
+}
+
+.staff {
+    background: #efefef;
+}
+
+#historia {
+    height: 100vh;
+
+}
+
+#visitanos {
+    min-height: 65vh;
+    margin-top: 8rem;
+}
+
+.map {
+    margin-bottom: 50px;
+}
+
+.nav-item {
+    min-width: 10px;
+    min-height: 80px;
+}
+
+.nav-link:hover {
+    color: red !important;
+    background-color: #a2a2a342;
+    
+    border-radius: 5%;
+}
+
+.card {
+    background-color: transparent !important;
+    border: transparent !important;
+}

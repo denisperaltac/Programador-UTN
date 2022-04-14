@@ -2,35 +2,38 @@ var express = require('express');
 var router = express.Router();
 var nodemailer = require("nodemailer");
 
+console.log(req.body)
+
 router.post('/', async(req, res, next) => {
   var nombre = req.body.nombre;
   var apellido = req.body.apellido;
   var email = req.body.email;
-  var telefono = req.body.telefono;
+  var tel = req.body.telefono;
   var mensaje = req.body.mensaje;
+
 
   var obj = {
     to: 'denisperaltac@gmail.com',
-    subject: 'CONTACTO WEB',
-    html: nombre + ' ' + apellido + "se contacto a través de la web con su correo: " + email + ". <br> Además, hizo este comentario: " + mensaje + ". <br> Su teléfono es: " + telefono
+    subject: 'CONTACTO DESDE LA WEB CAFFITO',
+    html:"se contacto a través de la web con su correo: "
   }
 
   var transport = nodemailer.createTransport({
-    host: process.env.SMTP_HOST,
-    port: process.env.SMTP_PORT,
+    host: "smtp.mailtrap.io",
+    port: 2525,
     auth: {
-      user: process.env.SMTP_USER,
-      pass: process.env.SMTP_PASS
+      user: "ba4387efc019d5",
+      pass: "6ca8bd8f746d5f"
     }
   });
 
   var info = await transport.sendMail(obj);
 
-  res.render('contacto', {
+  res.render('index', {
     message: 'Mensaje enviado correctamente'
   });
 });
-
+sadas
 
 
 /* GET users listing. */
