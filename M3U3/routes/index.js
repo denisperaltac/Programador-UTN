@@ -2,24 +2,29 @@ var express = require('express');
 var router = express.Router();
 var nodemailer = require('nodemailer');
 
+
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('index', { title: 'Caffito' });
 });
 
 router.post('/', async(req, res, next) => {
   var nombre = req.body.nombre;
   var apellido = req.body.apellido;
   var email = req.body.email;
-  var tel = req.body.telefono;
+  // if (req.body.telefono != '') {
+  // var tel = ' y su número de teléfono ' + req.body.tel + '. ';
+  // }
+  
+  if(req.body.tel != '') {
+    var tel = '<br>Teléfono: ' + req.body.tel;
+  } else {var tel = '.'}
   var mensaje = req.body.mensaje;
-
-  console.log(req.body);
 
   var obj = {
     to: 'denisperaltac@gmail.com',
     subject: 'CONTACTO DESDE LA WEB CAFFITO',
-    html:"se contacto a través de la web con su correo: " 
+    html: nombre + ' ' + apellido + ' se contacto a través de la web.' + '<br>Email: ' + email + tel + '<br>Dejo el siguiente mensaje: ' + mensaje
   }
 
   var transporter = nodemailer.createTransport({
@@ -34,7 +39,7 @@ router.post('/', async(req, res, next) => {
   var info = await transporter.sendMail(obj);
 
   res.render("index", {
-    message: "Mensaje enviado correctamente"
+    message: "Mensaje enviado correctamente",
   });
   
 });
