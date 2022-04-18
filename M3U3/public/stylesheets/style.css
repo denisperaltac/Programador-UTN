@@ -9,9 +9,10 @@ h1, h2, h3 {
 
 }
 
-.fondo {
+body {
     background: url(../images/crema.jpg) no-repeat;
     background-size:cover;
+    background-attachment: fixed;
 }
 
 .vista {
@@ -151,4 +152,14 @@ h1, h2, h3 {
 .card {
     background-color: transparent !important;
     border: transparent !important;
+}
+
+#message {
+    display: flex;
+    color: green;
+    background-color: rgba(91, 150, 91, 0.397);
+    font-size: large;
+    width: 30%;
+    padding-left: 1rem;
+    border-radius: 2px;
 }
