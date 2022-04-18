@@ -1,11 +1,5 @@
-footer {
-    background-color: #aaa;
-}
-
 h2, h3 {
-    /* font-family: 'Roboto', sans-serif; */
     color: rgb(0, 0, 0);
-    text-shadow: 1px 1px 2px rgb(255, 255, 255);
 }
 
 h1 {
@@ -20,7 +14,7 @@ body {
 
 .hero {
     display: flex;
-    background: url(../images/Fondo-cava.jpeg) no-repeat center center fixed; 
+    background: url(../images/Campo3.jpeg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -31,7 +25,7 @@ body {
 }
 
 #containerContacto {
-    background: url(../images/Campo3.jpeg) no-repeat;
+    background: url(../images/Fondo-cava.jpeg) no-repeat;
     background-size:cover;
     background-attachment: fixed;
     padding-top: 10px;
@@ -43,9 +37,19 @@ body {
     text-align: center;
 }
 
+#logoCaffalac2 {
+    margin-left: 2vh;
+    display: flex;
+    position: fixed;
+    z-index: 999;
+    height: 0px;
+}
+
+
 #textoPrincipal {
     width: 70%;
     margin-top: 30rem;
+    font-size: large;
 }
 
 #textoPrincipal h1{
@@ -86,17 +90,16 @@ body {
 
 .lista-novedades li a {
     background-color: transparent;
-    font-family: "Alfa Slab One", cursive;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     color: #000;
-    transition: all .2s ease-in-out;
+    transition: all .5s ease-in-out;
     display: block;
 }
 
 .lista-novedades li a:hover {
     color: #212529;
-    background-color: transparent;
+    background-color:#999a9b93
 }
 
 .lista-novedades li a img {
@@ -116,6 +119,7 @@ body {
 .testimonios {
     background-color: #dadada;
     padding-bottom: 4rem !important;
+    background-color: transparent;
 }
 
 .testimonio {
@@ -147,23 +151,7 @@ body {
 
 #contacto {
     min-height: 65vh;
-    margin-top: 8rem;
-}
-
-.map {
-    margin-bottom: 50px;
-}
-
-.nav-item {
-    min-width: 10px;
-    min-height: 80px;
-}
-
-.nav-link:hover {
-    color: red !important;
-    background-color: #a2a2a342;
-    
-    border-radius: 5%;
+    margin-top: 5rem;
 }
 
 .card {
@@ -171,13 +159,18 @@ body {
     border: transparent !important;
 }
 
-#message {
-    display: flex;
-    color: green;
-    background-color: rgba(91, 150, 91, 0.397);
+#formulario {
+    color: white;
     font-size: large;
-    width: 30%;
+}
+
+#message {
+    display: inline-flex;
+    color: rgb(255, 255, 255);
+    background-color: rgb(14, 151, 14);
+    font-size: large;
     padding-left: 1rem;
+    padding-right: 1rem;
     border-radius: 2px;
 }
 
@@ -185,6 +178,7 @@ body {
 
 .panel {
     position: fixed;
+    display: flex;
     z-index: 998;
     top: 0;
     left: 0;
@@ -192,7 +186,7 @@ body {
     bottom: 0;
     width: 100%;
     background-color:rgba(141, 141, 141, 0.87);
-    
+    justify-content: center;
     transform: translate(0, -100%);
     transition: transform .4s ease;
 }
@@ -239,11 +233,5 @@ body {
     padding: 0;
 }
 
-#holi {
-    margin-left: 2vh;
-    display: flex;
-    position: fixed;
-    z-index: 999;
-    height: 0px;
-}
+
 
