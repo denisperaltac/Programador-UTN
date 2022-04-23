@@ -25,19 +25,13 @@ body {
 }
 
 #containerContacto {
-    background: url(../images/Fondo-cava.jpeg) no-repeat;
+    background: url(../images/Campo4.jpeg) no-repeat;
     background-size:cover;
     background-attachment: fixed;
     padding-top: 10px;
 }
 
 #logoCaffalac {
-    display: inline-flex;
-    justify-content: center;
-    text-align: center;
-}
-
-#logoCaffalac2 {
     margin-left: 2vh;
     display: flex;
     position: fixed;
@@ -70,7 +64,7 @@ body {
 #containerNosotros {
     padding-top: 8px;
     background-color: #9c9d9e57;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 #nosotros img {
@@ -224,7 +218,7 @@ body {
 
 .panel-btn {
     position: fixed;
-    z-index: 999;
+    z-index: 998;
     top: 1vh;
     right: 1vw;
     width: 4rem;
@@ -232,3 +226,80 @@ body {
     border-radius: 50%;
     padding: 0;
 }
+
+/* Galeria de imagenes */
+
+.carouselImage img{
+    max-height: 60vh;
+    display: flex;
+    margin: auto;
+    margin-top: 20vh;
+}
+
+.carousel2 {
+    max-width: 80%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.galeria {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* width: 100%; */
+    background-color:rgba(7, 7, 7, 0.822);
+    transform: translate(0, -100%);
+    transition: transform .4s ease; 
+}
+
+.galeria.is-active {
+    transform: translate(0,0);
+}
+
+.carousel-Image {
+    display: flex;
+    max-width: 40rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+}
+
+.panel {
+    position: fixed;
+    display: flex;
+    z-index: 998;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:rgba(141, 141, 141, 0.87);
+    justify-content: center;
+    transform: translate(0, -100%);
+    transition: transform 
+    .4s ease;
+}
+
+.panel.is-active {
+    transform: translate(0,0);
+}
+
+.panel-btn2 {
+    
+    color: white !important;
+    position: fixed;
+    z-index: 1000;
+    top: 10vh;
+    right: 5vw;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    padding: 0;
+}
+
