@@ -32,6 +32,13 @@ app.use('/users', usersRouter);
 
 //Manejo Base de Datos
 
+// SELECT
+
+pool.query('select * from users').then(function (resultados) {
+  console.log(resultados)
+});
+
+
 // INSERT
 
 // var obj = {
