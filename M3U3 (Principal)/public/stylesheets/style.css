@@ -61,7 +61,7 @@ body {
 
 #containerNosotros {
     padding-top: 8px;
-    background-color: #9c9d9e57;
+    background-color: #9c9d9e7c;
     min-height: 100vh;
 }
 
@@ -138,7 +138,6 @@ body {
 
 #historia {
     height: 100vh;
-
 }
 
 #contacto {
@@ -160,6 +159,16 @@ body {
     display: inline-flex;
     color: rgb(255, 255, 255);
     background-color: rgb(14, 151, 14);
+    font-size: large;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 2px;
+}
+
+#messageError {
+    display: inline-flex;
+    color: rgb(255, 255, 255);
+    background-color: rgb(212, 26, 26);
     font-size: large;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -300,3 +309,6 @@ body {
     padding: 0;
 }
 
+#logIn {
+    
+}

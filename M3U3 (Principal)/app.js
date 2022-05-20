@@ -5,12 +5,12 @@ var cookieParser = require("cookie-parser");
 var logger = require("morgan");
 
 require("dotenv").config();
-
-var pool = require("./models/db");
+var session = require("express-session");
 
 var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
 var loginRouter = require("./routes/admin/login");
+var adminRouter = require("./routes/admin/novedades");
 
 var app = express();
 const hbs = require("hbs");
@@ -22,6 +22,27 @@ hbs.registerPartials(__dirname + "/views/partials");
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "hbs");
 
+app.use(
+  session({
+    secret: "12w45qe1qe4q1eq54eq5",
+    resave: false,
+    saveUninitialized: true,
+  })
+);
+
+secured = async (req, res, next) => {
+  try {
+    //console.log(req.session.id_usuario);
+    if (req.session.id_usuario) {
+      next();
+    } else {
+      res.redirect("/admin/login");
+    }
+  } catch (error) {
+    console.log(error);
+  }
+};
+
 app.use(logger("dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
@@ -31,29 +52,15 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use("/", indexRouter);
 app.use("/users", usersRouter);
 app.use("/admin/login", loginRouter);
-
-// secured = async (req, res, next) => {
-//   try {
-//     console.log(req.session.id_usuario);
-//     if (req.session.id_usuario) {
-//       next();
-//     } else {
-//       res.redirect("/admin/login");
-//     }
-//   } catch (error) {
-//     console.log(error);
-//   }
-// };
-
-// app.use("/admin/novedades", secured, adminNovedadesRouter);
+app.use("/admin/novedades", secured, adminRouter);
 
 //Manejo Base de Datos
 
 // SELECT
 
-pool.query("select * from usuarios").then(function (resultados) {
-  console.log(resultados);
-});
+// pool.query("select * from usuarios").then(function (resultados) {
+//   console.log(resultados);
+// });
 
 // INSERT
 

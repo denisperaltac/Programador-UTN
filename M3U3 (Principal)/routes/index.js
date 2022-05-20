@@ -11,16 +11,13 @@ router.post("/", async (req, res, next) => {
   var nombre = req.body.nombre;
   var apellido = req.body.apellido;
   var email = req.body.email;
-  // if (req.body.telefono != '') {
-  // var tel = ' y su número de teléfono ' + req.body.tel + '. ';
-  // }
+  var mensaje = req.body.mensaje;
 
   if (req.body.tel != "") {
     var tel = "<br>Teléfono: " + req.body.tel;
   } else {
     var tel = ".";
   }
-  var mensaje = req.body.mensaje;
 
   var obj = {
     to: "denisperaltac@gmail.com",
