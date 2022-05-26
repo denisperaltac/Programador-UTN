@@ -1,9 +1,40 @@
 <div class="container" style="margin:50px auto">
-    <div class="row bg-black">
-        <div class="col">
-            <h1 class="text-right">Hola {{ usuario }}</h1> 
-            <h1 class="text-right">Has ingresado como administrador</h1> 
-            <a href="/admin/login" class="btn btn-sm btn-danger">Cerrar sesión <i class="fa fa-sing-out"></i></a>   
-        </div>
+  <div class="row bg-black">
+    <div class="col">
+      <h1 class="text-right">Hola {{usuario}}</h1>
+      <h1 class="text-right">Has ingresado como administrador</h1>
+      <a href="/admin/login" class="btn btn-sm btn-danger">Cerrar sesión</a>
     </div>
+  </div>
+  <div class="row bg-white mt-5">
+    <div class="col-7">
+      <h2>Listado de Novedades</h2>
+    </div>
+    <div class="col-5 text-right">
+      <a href="" class="btn btn-success">Nuevo</a>
+    </div>
+  </div>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Título</th>
+        <th scope="col">Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each novedades}}
+        <tr>
+          <th scope="row">{{id}}</th>
+          <td>{{titulo}}</td>
+          <td><a href="" class="btn btn-secondary">Editar</a>
+            <a
+              href="/admin/novedades/eliminar/{{id}}"
+              class="btn btn-danger"
+            >Eliminar</a>
+          </td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
 </div>

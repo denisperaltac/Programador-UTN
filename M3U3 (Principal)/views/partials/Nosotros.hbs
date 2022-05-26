@@ -1,101 +1,187 @@
 <div id="containerNosotros">
-    <div class="container" id="nosotros">
-        <div class="row">
-            <div class="row row-cols-1 row-cols-md-3 col-sm-12 ">
-                <div class="col">
-                    <div class="card">
-                        <img src="./images/Campo1.jpg" class="card-img-top" alt="..." data-aos="fade-down-right"
-                            data-aos-offset="200" data-aos-duration="1000">
-                        <div class="card-body">
-                            <h5 class="card-title">Rural</h5>
-                            <p class="card-text">El lugar donde obtenemos nuestra materia prima.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <img src="./images/empleados-fabrica.jpg" class="card-img-top" alt="..." data-aos="fade-down"
-                            data-aos-offset="200" data-aos-duration="1000">
-                        <div class="card-body">
-                            <h5 class="card-title">Fábrica</h5>
-                            <p class="card-text">Mediante procesos de calidad y cuidado de todos los ingredientes
-                                elaboramos.
-                                Este es el lugar donde nace NUESTRO PRODUCTO</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <img src="./images/Caffito.png" class="card-img-top" alt="..." data-aos="fade-down-left"
-                            data-aos-offset="200" data-aos-duration="1000">
-                        <div class="card-body">
-                            <h5 class="card-title">Caffito</h5>
-                            <p class="card-text">Para garantizarte una gran experiencia a la hora de adquirir tus
-                                productos
-                                contamos con nuestro propio punto de venta</p>
-                        </div>
-                    </div>
-                </div>
+  <div class="container" id="nosotros">
+    <div class="row">
+      <div class="row row-cols-1 row-cols-md-3 col-sm-12">
+        <div class="col">
+          <div class="card">
+            <img
+              src="./images/Campo1.jpg"
+              class="card-img-top"
+              alt="..."
+              data-aos="fade-down-right"
+              data-aos-offset="200"
+              data-aos-duration="1000"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Rural</h5>
+              <p class="card-text">El lugar donde obtenemos nuestra materia
+                prima.</p>
             </div>
+          </div>
         </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="./images/empleados-fabrica.jpg"
+              class="card-img-top"
+              alt="..."
+              data-aos="fade-down"
+              data-aos-offset="200"
+              data-aos-duration="1000"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Fábrica</h5>
+              <p class="card-text">Mediante procesos de calidad y cuidado de
+                todos los ingredientes elaboramos. Este es el lugar donde nace
+                NUESTRO PRODUCTO</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="./images/Caffito.png"
+              class="card-img-top"
+              alt="..."
+              data-aos="fade-down-left"
+              data-aos-offset="200"
+              data-aos-duration="1000"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Caffito</h5>
+              <p class="card-text">Para garantizarte una gran experiencia a la
+                hora de adquirir tus productos contamos con nuestro propio punto
+                de venta</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="novedades" class="row py-4 mt-3 col-md-12 col-sm-12">
+    <div class="col-md-5 offset-md-1 mx-auto">
+      <h2>Galeria De Imágenes</h2>
+      <ul class="lista-novedades">
+        <li id="Rural"><a><img src="images/Campo4.jpeg" />Rural</a></li>
+        <li id="Fabrica"><a><img src="./images/fabrica.jpg" />Fábrica</a></li>
+        <li id="Productos"><a><img
+              src="./images/quesoHolanda.jpeg"
+            />Productos</a></li>
+        <li id="Caffito"><a><img src="images/caffito.jpg" />Punto de Venta</a></li>
+      </ul>
     </div>
 
+    <div class="col-md-5 offset-md-1 mx-auto">
+      <h2>Novedades</h2>
+      <ul class="lista-novedades">
+        {{#each novedades}}
+          <li><a
+              href="javascript:void(0);"
+              data-toggle="modal"
+              data-target="#modal{{id}}"
+            ><img src="images/caffito.jpg" />{{titulo}}</a></li>
+        {{/each}}
 
-    <div id="novedades" class="row py-4 mt-3 col-md-12 col-sm-12">
-        <div class="col-md-5 offset-md-1 mx-auto">
-            <h2>Galeria De Imágenes</h2>
-            <ul class="lista-novedades">
-                <li id="Rural"><a><img src="images/Campo4.jpeg">Rural</a></li>
-                <li id="Fabrica"><a><img src="./images/fabrica.jpg">Fábrica</a></li>
-                <li id="Productos"><a><img src="./images/quesoHolanda.jpeg">Productos</a></li>
-                <li id="Caffito"><a><img src="images/caffito.jpg">Punto de Venta</a></li>
-            </ul>
-        </div>
 
-        <div class="col-12 col-sm-12 col-md-5 my-auto">
-            <div class="rounded py-3 testimonios">
-
-                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators my-auto">
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                            class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                            aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                            aria-label="Slide 3"></button>
-                    </div>
-                    <div class="carousel-inner text-center">
-                        <h2 class="mb-5">Testimonios</h2>
-                        <div class="carousel-item active mb-5">
-                            <h5>Buen lugar
-                                Confortable. Bien atendido.</h5>
-                            <p>Victor Raul Lopez, Local Guide</p>
-                        </div>
-                        <div class="carousel-item mb-5">
-                            <h5> Riquísimos quesos y excelente atención!</h5>
-                            <p>Franco Amatilli, Local Guide</p>
-                        </div>
-                        <div class="carousel-item mb-5">
-                            <h5> Muy buena gente</h5>
-                            <p>Luciano Bussi, Local Guide</p>
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
+    {{! Modal }}
+    {{#each novedades}}
+      <div class="modal" id="modal{{id}}" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title">{{titulo}}</h3>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
             </div>
+            <div class="modal-body">
+              <h5>{{subtitulo}}</h5>
+              <p>{{cuerpo}}</p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >Close</button>
+            </div>
+          </div>
         </div>
+      </div>
+    {{/each}}
+
+    {{! Fin Modal }}
+
+    <div class="col-12 col-sm-12 col-md-10 my-auto mx-auto mt-3">
+      <div class="rounded py-3 testimonios">
+
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators my-auto">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner text-center">
+            <h2 class="mb-5">Testimonios</h2>
+            <div class="carousel-item active mb-5">
+              <h5>Buen lugar Confortable. Bien atendido.</h5>
+              <p>Victor Raul Lopez, Local Guide</p>
+            </div>
+            <div class="carousel-item mb-5">
+              <h5> Riquísimos quesos y excelente atención!</h5>
+              <p>Franco Amatilli, Local Guide</p>
+            </div>
+            <div class="carousel-item mb-5">
+              <h5> Muy buena gente</h5>
+              <p>Luciano Bussi, Local Guide</p>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
     </div>
+  </div>
 
-
-
-    
 </div>
