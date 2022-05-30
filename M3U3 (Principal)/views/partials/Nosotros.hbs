@@ -1,4 +1,6 @@
 <div id="containerNosotros">
+
+
   <div class="container" id="nosotros">
     <div class="row">
       <div class="row row-cols-1 row-cols-md-3 col-sm-12">
@@ -57,32 +59,21 @@
         </div>
       </div>
     </div>
-  </div>
+      </div>
 
   <div id="novedades" class="row py-4 mt-3 col-md-12 col-sm-12">
-    <div class="col-md-5 offset-md-1 mx-auto">
-      <h2>Galeria De Imágenes</h2>
-      <ul class="lista-novedades">
-        <li id="Rural"><a><img src="images/Campo4.jpeg" />Rural</a></li>
-        <li id="Fabrica"><a><img src="./images/fabrica.jpg" />Fábrica</a></li>
-        <li id="Productos"><a><img
-              src="./images/quesoHolanda.jpeg"
-            />Productos</a></li>
-        <li id="Caffito"><a><img src="images/caffito.jpg" />Punto de Venta</a></li>
-      </ul>
-    </div>
-
+    
     <div class="col-md-5 offset-md-1 mx-auto">
       <h2>Novedades</h2>
-      <ul class="lista-novedades">
+      <ul class="lista-novedades" id="listaNov">
         {{#each novedades}}
           <li><a
               href="javascript:void(0);"
-              data-toggle="modal"
-              data-target="#modal{{id}}"
+              data-bs-toggle="modal"
+              data-bs-target="#modal{{id}}"
             ><img src="images/caffito.jpg" />{{titulo}}</a></li>
         {{/each}}
-
+    </div>
 
     {{! Modal }}
     {{#each novedades}}
@@ -114,7 +105,21 @@
       </div>
     {{/each}}
 
-    {{! Fin Modal }}
+     {{! Fin Modal }}
+
+     <div class="col-md-5 offset-md-1 mx-auto">
+      <h2>Galeria De Imágenes</h2>
+      <ul class="lista-novedades">
+        <li id="Rural"><a><img src="images/Campo4.jpeg" />Rural</a></li>
+        <li id="Fabrica"><a><img src="./images/fabrica.jpg" />Fábrica</a></li>
+        <li id="Productos"><a><img
+              src="./images/quesoHolanda.jpeg"
+            />Productos</a></li>
+        <li id="Caffito"><a><img src="images/caffito.jpg" />Punto de Venta</a></li>
+      </ul>
+    </div>
+   
+  </div>
 
     <div class="col-12 col-sm-12 col-md-10 my-auto mx-auto mt-3">
       <div class="rounded py-3 testimonios">
@@ -182,6 +187,5 @@
         </div>
       </div>
     </div>
-  </div>
 
-</div>
+
