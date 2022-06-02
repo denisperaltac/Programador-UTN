@@ -1,0 +1,35 @@
+<div class="col-6 offset-3 mt-5">
+  <h3>Agregar una nueva novedad</h3>
+  <form action="/admin/novedades/agregar" method="post">
+    <div class="form-group mt-4">
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Título"
+        name="titulo"
+        required
+      />
+    </div>
+    <div class="form-group mt-3">
+      <textarea
+        type="text"
+        class="form-control"
+        placeholder="Subtítulo"
+        name="subtitulo"
+        required
+      ></textarea>
+    </div>
+    <div class="form-group mt-3">
+      <textarea
+        type="text"
+        class="form-control"
+        placeholder="Cuerpo"
+        name="cuerpo"
+      ></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary mt-2">Guardar</button>
+  </form>
+  {{#if error}}
+    <p>{{message}}</p>
+  {{/if}}
+</div>

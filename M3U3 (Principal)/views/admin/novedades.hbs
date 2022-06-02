@@ -1,17 +1,30 @@
+<div
+  style=" margin: 20px 20px 0px 0px;
+    justify-content: end;
+    display: flex !important;"
+>
+  <a
+    href="/admin/login"
+    style="font-size: medium;"
+    class="btn btn-sm btn-danger"
+  >Cerrar sesión</a>
+</div>
 <div class="container" style="margin:50px auto">
-  <div class="row bg-black">
+  <div class="row">
     <div class="col">
-      <h1 class="text-right">Hola {{usuario}}</h1>
-      <h1 class="text-right">Has ingresado como administrador</h1>
-      <a href="/admin/login" class="btn btn-sm btn-danger">Cerrar sesión</a>
+      <h1 class="text-right" style="color: black;">Hola
+        {{usuario}}</h1>
+      <p class="text-right" style="color: black;">Rol: admin</p>
+
     </div>
   </div>
   <div class="row bg-white mt-5">
-    <div class="col-7">
-      <h2>Listado de Novedades</h2>
+    <div class="col-10">
+      <h3>Listado de Novedades</h3>
     </div>
-    <div class="col-5 text-right">
-      <a href="" class="btn btn-success">Nuevo</a>
+    <div class="col-2 d-flex justify-content-end align-items-center">
+      <a href="/admin/novedades/agregar" class="btn btn-success">Nuevo
+        <i class="fa-solid fa-plus"></i></a>
     </div>
   </div>
   <table class="table">
@@ -27,11 +40,13 @@
         <tr>
           <th scope="row">{{id}}</th>
           <td>{{titulo}}</td>
-          <td><a href="" class="btn btn-secondary">Editar</a>
-            <a
-              href="/admin/novedades/eliminar/{{id}}"
-              class="btn btn-danger"
-            >Eliminar</a>
+          <td><a
+              href="/admin/novedades/modificar/{{id}}"
+              class="btn btn-secondary"
+            ><i class="fa-solid fa-pen-to-square"></i></a>
+            <a href="/admin/novedades/eliminar/{{id}}" class="btn btn-danger">
+              <i class="fa-solid fa-trash"></i>
+            </a>
           </td>
         </tr>
       {{/each}}
