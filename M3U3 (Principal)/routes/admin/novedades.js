@@ -58,19 +58,25 @@ router.get("/editar/:id", async (req, res, next) => {
 
 // Editar cuando toco el button
 
-// router.post("/editar", async (req, res, next) => {
-//   try {
-//     await novedadesModel.editarNovedades(req.body);
-//     res.redirect("/admin/novedades");
-//   } catch (error) {
-//     console.log(error);
+router.post("/editar", async (req, res, next) => {
+  try {
+    var obj = {
+      titulo: req.body.titulo,
+      subtitulo: req.body.subtitulo,
+      cuerpo: req.body.cuerpo,
+    };
 
-//     res.render("admin/agregar", {
-//       layout: "admin/layout",
-//       error: true,
-//       message: "No pudimos realizar la solucitud.",
-//     });
-//   }
-// });
+    await novedadesModel.editarNovedades(obj, req.body.id);
+    res.redirect("/admin/novedades");
+  } catch (error) {
+    console.log(error);
+
+    res.render("admin/editar", {
+      layout: "admin/layout",
+      error: true,
+      message: "No pudimos realizar la solucitud.",
+    });
+  }
+});
 
 module.exports = router;

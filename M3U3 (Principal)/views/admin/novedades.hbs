@@ -3,45 +3,44 @@
     justify-content: end;
     display: flex !important;"
 >
-  <a
-    href="/admin/login"
-    style="font-size: medium;"
-    class="btn btn-sm btn-danger"
-  >Cerrar sesión</a>
+
 </div>
 <div class="container" style="margin:50px auto">
   <div class="row">
-    <div class="col">
-      <h1 class="text-right" style="color: black;">Hola
-        {{usuario}}</h1>
-      <p class="text-right" style="color: black;">Rol: admin</p>
 
-    </div>
+    <h1 class="text-right col-10" style="color: black;">Hola
+      {{usuario}}</h1>
+    <a
+      href="/admin/login"
+      class="btn btn-sm btn-danger col-2"
+      style="display:flex;  align-items: center; width:auto; height:fit-content; font-size:1rem; font-weight:500"
+    >Cerrar sesión</i></a>
+
+    <p class="text-right" style="color: black;">Rol: admin</p>
   </div>
   <div class="row bg-white mt-5">
     <div class="col-10">
       <h3>Listado de Novedades</h3>
     </div>
-    <div class="col-2 d-flex justify-content-end align-items-center">
-      <a href="/admin/novedades/agregar" class="btn btn-success">Nuevo
+    <div class="col-2 d-flex align-items-center">
+      <a href="/admin/novedades/agregar" class="btn btn-success">
         <i class="fa-solid fa-plus"></i></a>
     </div>
   </div>
-  <table class="table">
+  <table class="table table-hover">
     <thead>
       <tr>
-        <th scope="col">#</th>
-        <th scope="col">Título</th>
-        <th scope="col">Acciones</th>
+        <th scope="col" class="col-10">Título</th>
+        <th scope="col" class="col-2">Acciones</th>
       </tr>
     </thead>
     <tbody>
       {{#each novedades}}
         <tr>
-          <th scope="row">{{id}}</th>
+
           <td>{{titulo}}</td>
           <td><a
-              href="/admin/novedades/modificar/{{id}}"
+              href="/admin/novedades/editar/{{id}}"
               class="btn btn-secondary"
             ><i class="fa-solid fa-pen-to-square"></i></a>
             <a href="/admin/novedades/eliminar/{{id}}" class="btn btn-danger">
