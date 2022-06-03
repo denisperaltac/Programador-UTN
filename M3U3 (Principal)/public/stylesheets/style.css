@@ -7,7 +7,8 @@ h1 {
 }
 
 body {
-    background: url(../images/crema.jpg) no-repeat;
+   
+    background: url(../images/quesovintage2.png) no-repeat;
     background-size:cover;
     background-attachment: fixed;
 }
@@ -61,7 +62,9 @@ body {
 
 #containerNosotros {
     padding-top: 8px;
-    background-color: #9c9d9e7c;
+    background: url(../images/crema.jpg) no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
     min-height: 100vh;
 }
 
@@ -142,7 +145,7 @@ body {
 }
 
 #historia {
-    height: 100vh;
+    min-height: 100vh;
 }
 
 #contacto {
