@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Jun 02, 2022 at 11:18 PM
+-- Generation Time: Jun 09, 2022 at 06:21 PM
 -- Server version: 5.7.36
 -- PHP Version: 7.4.26
 
@@ -33,17 +33,19 @@ CREATE TABLE IF NOT EXISTS `novedades` (
   `titulo` varchar(250) COLLATE utf8_unicode_ci NOT NULL,
   `subtitulo` text COLLATE utf8_unicode_ci NOT NULL,
   `cuerpo` text COLLATE utf8_unicode_ci NOT NULL,
+  `img_id` varchar(250) COLLATE utf8_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=10 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=17 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `novedades`
 --
 
-INSERT INTO `novedades` (`id`, `titulo`, `subtitulo`, `cuerpo`) VALUES
-(6, 'Noticia 1', 'lorem lorem lorem', 'lorem lorem lorem lorem lorem lorem lorem'),
-(9, 'Noticia 2', 'lorem lorem lorem lorem lorem lorem lorem', 'lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem'),
-(5, 'Noticia 3', 'lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem', 'lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem');
+INSERT INTO `novedades` (`id`, `titulo`, `subtitulo`, `cuerpo`, `img_id`) VALUES
+(6, 'Noticia 1', 'lorem lorem lorem', 'lorem lorem lorem lorem lorem lorem lorem', NULL),
+(13, 'Noticia 2', ' Lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem', ' Lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem', 's2qgqyuycgpk5xerld4e'),
+(14, 'Noticia 4', ' Lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem', 'Hol Lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem Lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem', ''),
+(15, 'Noticia 5', ' Lorem lorem lorem lorem lorem lorem lorem', ' Lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem ', '');
 
 -- --------------------------------------------------------
 

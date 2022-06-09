@@ -71,7 +71,7 @@
               href="javascript:void(0);"
               data-bs-toggle="modal"
               data-bs-target="#modal{{id}}"
-            ><img src="images/caffito.jpg" />{{titulo}}</a></li>
+            ><img src="{{imagen}}" />{{titulo}}</a></li>
         {{/each}}
     </div>
 
@@ -92,7 +92,12 @@
             <div class="modal-body">
               <h5>{{subtitulo}}</h5>
               <p>{{cuerpo}}</p>
+              
             </div>
+            
+    <img src="{{imagen}}" alt="{{subtitulo}}" width="80%" style="align-self: center;" class="mb-2"/>
+  
+            
             <div class="modal-footer">
               <button
                 type="button"
