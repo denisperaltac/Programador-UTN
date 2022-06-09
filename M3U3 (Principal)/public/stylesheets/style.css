@@ -21,7 +21,6 @@ body {
     -o-background-size: cover;
     background-size: cover;
     height: 100vh;
-    min-height: 600px;
     color: white;
 }
 
@@ -41,14 +40,15 @@ body {
 }
 
 #textoPrincipal {
-    width: 70%;
-    margin-top: 30rem;
+    margin-top: 3%;
     font-size: large;
 }
 
-#textoPrincipal h1{
-    text-shadow: 2px 2px #565758;
-    color: white;
+#textoPrincipal{
+    
+    display: flex;
+    align-items:top;
+    justify-content:center;
 }
 
 #lugar {
@@ -146,6 +146,20 @@ body {
 
 #historia {
     min-height: 100vh;
+}
+
+#historia img {
+    justify-content: center;
+}
+
+
+#historia p {
+    background-color: rgba(126, 78, 78, 0.82);
+    border-radius: 0.5rem;
+    height: 100%;
+    font-size: large;
+    color: white;
+    padding: 5%;
 }
 
 #contacto {
