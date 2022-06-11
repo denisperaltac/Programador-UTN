@@ -123,6 +123,7 @@ router.post("/editar", async (req, res, next) => {
       titulo: req.body.titulo,
       subtitulo: req.body.subtitulo,
       cuerpo: req.body.cuerpo,
+      img_id,
     };
 
     await novedadesModel.editarNovedades(obj, req.body.id);
