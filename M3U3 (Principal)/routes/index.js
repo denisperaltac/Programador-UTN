@@ -59,16 +59,16 @@ router.post("/", async (req, res, next) => {
       mensaje,
   };
 
-  var transporter = nodemailer.createTransport({
-    host: process.env.SMTP_HOST,
-    port: process.env.SMTP_PORT,
+  var transport = nodemailer.createTransport({
+    host: "smtp.mailtrap.io",
+    port: 2525,
     auth: {
-      user: process.env.SMTP_USER,
-      pass: process.env.SMTP_PASS,
+      user: "ba4387efc019d5",
+      pass: "6ca8bd8f746d5f",
     },
   });
 
-  var info = await transporter.sendMail(obj);
+  var info = await transport.sendMail(obj);
 
   res.render("index", {
     message: "Mensaje enviado correctamente",
