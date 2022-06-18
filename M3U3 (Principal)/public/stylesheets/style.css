@@ -7,7 +7,7 @@ h1 {
 }
 
 body {
-   
+    overflow-x: hidden;
     background: url(../images/quesovintage2.png) no-repeat;
     background-size:cover;
     background-attachment: fixed;
